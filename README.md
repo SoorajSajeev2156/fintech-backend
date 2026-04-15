@@ -31,3 +31,38 @@ Sample request:
   "email": "sooraj@gmail.com",
   "mobile": "9876543210"
 }
+
+Verify OTP
+
+POST /api/verify-otp
+
+Sample request:
+
+{
+  "mobileOrEmail": "9876543210",
+  "otp": "727417"
+}
+Login
+
+POST /api/login
+
+Sample request:
+
+{
+  "mobileOrEmail": "9876543210"
+}
+Transfer Money
+
+POST /api/transfer
+
+Sample request:
+
+{
+  "senderUserId": 1,
+  "receiverUserId": 2,
+  "amount": 200
+}
+
+Transaction History
+
+GET /api/transactions/{userId}
